@@ -5,12 +5,8 @@ __pycache__/
 .mypy_cache/
 .ipynb_checkpoints/
 
-data/raw/*
 data/interim/*
-data/processed/*
-!data/raw/.gitkeep
 !data/interim/.gitkeep
-!data/processed/.gitkeep
 
 reports/*.csv
 reports/*.png
