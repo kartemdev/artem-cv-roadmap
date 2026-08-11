@@ -26,9 +26,16 @@ dev = [
 
 [tool.ruff]
 line-length = 88
+target-version = "py313"
 
 [tool.ruff.lint]
 select = ["E", "F", "I"]
+
+[tool.pyright]
+include = ["src", "main.py"]
+extraPaths = ["src"]
+pythonVersion = "3.13"
+typeCheckingMode = "standard"
 
 [tool.setuptools.packages.find]
 where = ["src"]
