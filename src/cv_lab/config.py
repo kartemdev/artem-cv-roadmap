@@ -8,4 +8,3 @@ PROCESSED_DATA_DIR = DATA_DIR / "processed"
 REPORTS_DIR = PROJECT_ROOT / "reports"
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".bmp"}
 DEFAULT_IMAGE_SIZE = 224
-RANDOM_SEED = 42
