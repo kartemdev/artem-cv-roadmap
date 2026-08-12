@@ -21,6 +21,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "pytest",
     "ruff",
 ]
 
@@ -32,10 +33,13 @@ target-version = "py313"
 select = ["E", "F", "I"]
 
 [tool.pyright]
-include = ["src", "main.py"]
+include = ["src", "tests", "main.py"]
 extraPaths = ["src"]
 pythonVersion = "3.13"
 typeCheckingMode = "standard"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
